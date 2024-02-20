@@ -4,7 +4,18 @@ function Collection(volt) {
       {volt.voltCollection.map((item, index) => (
         <div key={index} className="voltCard">
           {item.image}
-          <p className="voltTitle text-overlay">{item.text}</p>
+          <p
+            className={
+              item.stock === 0
+                ? "voltTitle text-overlay unavailable"
+                : "voltTitle text-overlay"
+            }
+          >
+            {item.stock === 0 ? `${item.text} (Unavailable)` : item.text}
+          </p>
+          {item.exclusive === "yes" && (
+            <img src="images/star.png" alt="exclusive" className="Location" />
+          )}
         </div>
       ))}
     </div>

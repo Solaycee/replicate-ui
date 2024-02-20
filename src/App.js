@@ -17,6 +17,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt One ring",
+      stock: 0,
+      exclusive: "yes",
     },
     {
       image: (
@@ -27,6 +29,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt One Earrings",
+      stock: 0,
+      exclusive: "no",
     },
     {
       image: (
@@ -37,6 +41,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt One Pendant",
+      stock: 4,
+      exclusive: "yes",
     },
     {
       image: (
@@ -47,6 +53,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt One Stud",
+      stock: 2,
+      exclusive: "yes",
     },
     {
       image: (
@@ -57,6 +65,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt One Stud",
+      stock: 8,
+      exclusive: "no",
     },
     {
       image: (
@@ -67,6 +77,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt One Brooch",
+      stock: 4,
+      exclusive: "yes",
     },
     {
       image: (
@@ -77,6 +89,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt Upside Down Play Large Bracket",
+      stock: 3,
+      exclusive: "no",
     },
     {
       image: (
@@ -87,6 +101,8 @@ function Items(volt) {
         />
       ),
       text: "LV Volt Upside Down Play Large Bracket",
+      stock: 0,
+      exclusive: "yes",
     },
   ];
   return <Collection voltCollection={voltCollection} />;

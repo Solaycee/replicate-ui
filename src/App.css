@@ -103,7 +103,9 @@ svg {
   padding: 9px 18px;
   cursor: pointer;
   gap: 4px;
-  transition: border-color 0.3s, border-width 0.3;
+  transition:
+    border-color 0.3s,
+    border-width 0.3;
 }
 
 .filter:hover {
@@ -299,4 +301,19 @@ svg {
 #root > div {
   margin: 0;
   padding: 0;
+}
+
+/* *************** */
+
+.unavailable {
+  text-shadow: 5px 5px 12px rgba(255, 0, 0, 0.5);
+  color: gray;
+}
+
+.Location {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
 }
